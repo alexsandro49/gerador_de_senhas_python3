@@ -9,7 +9,7 @@ main_screen.resize(500, 500)
 main_screen.setWindowTitle("Gerenciador de senhas")
 main_screen.setStyleSheet("background-color: #FF101F; color: #ffffff;")
 
-label1 = QLineEdit("", main_screen)
+label1 = QLabel("", main_screen)
 label1.setGeometry(50, 60, 400, 50)
 label1.setStyleSheet("background-color: #ffffff; color: #22333b; border: 2px solid #ffffff; border-radius: 5px; font-size: 18px; font-weight: bold; font-family: Arial, Verdana, sans-serif;")
 

@@ -1,5 +1,6 @@
 import sys
 import screen1
+import screen2
 import generate_password
 from PyQt6.QtWidgets import QApplication
 
@@ -19,6 +20,10 @@ def slider():
     value = screen1.slider.value()
     screen1.label2.setText(str(value))
 
+def show_passwords():
+    screen2.update_label(password)
+    screen2.save_screen.show()
+
 
 app = QApplication(sys.argv)
 password = ""
@@ -26,4 +31,5 @@ password = ""
 screen1.main_screen.show()
 screen1.btn1.clicked.connect(check_boxes)
 screen1.slider.valueChanged.connect(slider)
+screen1.btn3.clicked.connect(show_passwords)
 app.exec()
