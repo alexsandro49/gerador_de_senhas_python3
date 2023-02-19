@@ -1,5 +1,5 @@
 import sys
-from PyQt6.QtWidgets import QApplication, QWidget, QPushButton, QLabel, QLineEdit, QCheckBox, QSlider
+from PyQt6.QtWidgets import QApplication, QWidget, QPushButton, QLabel, QCheckBox, QSlider
 from PyQt6.QtCore import Qt
 
 app = QApplication(sys.argv)
@@ -7,7 +7,7 @@ app = QApplication(sys.argv)
 main_screen = QWidget()
 main_screen.resize(500, 500)
 main_screen.setWindowTitle("Gerenciador de senhas")
-main_screen.setStyleSheet("background-color: #FF101F; color: #ffffff;")
+main_screen.setStyleSheet("background-color: #150050; color: #ffffff;")
 
 label1 = QLabel("", main_screen)
 label1.setGeometry(50, 60, 400, 50)
@@ -36,6 +36,8 @@ slider.setStyleSheet("background-color: #ffffff; color: #22333b; font-size: 12px
 
 label2 = QLabel("0", main_screen)
 label2.setGeometry(350, 130, 100, 40)
+label2.setAlignment((Qt.AlignmentFlag.AlignHCenter | Qt.AlignmentFlag.AlignVCenter))
+
 label2.setStyleSheet("background-color: #22333b; border: 2px solid #ffffff; border-radius: 5px; font-size: 15px;")
 
 btn1 = QPushButton("GERAR", main_screen)
@@ -49,4 +51,3 @@ btn2.setStyleSheet("background-color: #22333b; border: 2px solid #ffffff; border
 btn3 = QPushButton("SENHAS SALVAS", main_screen)
 btn3.setGeometry(50, 340, 400, 40)
 btn3.setStyleSheet("background-color: #22333b; border: 2px solid #ffffff; border-radius: 5px;")
-

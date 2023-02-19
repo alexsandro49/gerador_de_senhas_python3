@@ -1,6 +1,5 @@
 import sys
-from PyQt6.QtWidgets import QApplication, QWidget, QPushButton, QLabel, QTableWidget, QTableWidgetItem, QLineEdit
-from PyQt6.QtCore import Qt
+from PyQt6.QtWidgets import QApplication, QWidget, QPushButton, QLabel, QLineEdit
 
 
 def update_label(text_label):
@@ -19,7 +18,7 @@ text_label1 = ""
 save_screen = QWidget()
 save_screen.resize(300, 300)
 save_screen.setWindowTitle("Salvar senha")
-save_screen.setStyleSheet("background-color: #FF101F; color: #22333b;")
+save_screen.setStyleSheet("background-color: #150050; color: #22333b;")
 
 label1 = QLabel("Senha:", save_screen)
 label1.setGeometry(20, 30, 260, 20)
