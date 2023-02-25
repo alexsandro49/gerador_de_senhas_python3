@@ -22,11 +22,11 @@ save_screen.setStyleSheet("background-color: #150050; color: #22333b;")
 
 label1 = QLabel("Senha:", save_screen)
 label1.setGeometry(20, 30, 260, 20)
-label1.setStyleSheet("background-color: None; color: #22333b; border: None; font-size: 22px; font-weight: bold; font-family: Arial, Verdana, sans-serif;")
+label1.setStyleSheet("background-color: None; color: #ffffff; border: None; font-size: 22px; font-weight: bold; font-family: Arial, Verdana, sans-serif;")
 
 label2 = QLabel("Sobre:", save_screen)
 label2.setGeometry(20, 140, 260, 20)
-label2.setStyleSheet("background-color: None; color: #22333b; border: None; font-size: 22px; font-weight: bold; font-family: Arial, Verdana, sans-serif;")
+label2.setStyleSheet("background-color: None; color: #ffffff; border: None; font-size: 22px; font-weight: bold; font-family: Arial, Verdana, sans-serif;")
 
 line_edit = QLineEdit(save_screen)
 line_edit.setGeometry(20, 180, 260, 50)
